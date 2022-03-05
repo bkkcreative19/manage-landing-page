@@ -21,6 +21,7 @@ html {
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 .pattern {
@@ -41,6 +42,16 @@ a {
 
 ul {
   list-style: none;
+}
+
+p {
+  color: var(--Dark-Grayish-Blue);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--Dark-Blue);
 }
 
 .container {
@@ -65,11 +76,9 @@ ul {
 }
 .hero__content h1 {
   font-size: 4rem;
-  color: var(--Dark-Blue);
 }
 .hero__content p {
   font-size: 1.5rem;
-  color: var(--Dark-Grayish-Blue);
   margin-top: 0.5em;
 }
 .hero__content a {
@@ -80,6 +89,102 @@ ul {
   font-size: 1.3rem;
   border-radius: 50px;
   color: var(--Vary-Light-Gray);
+}
+
+.features__desc {
+  margin-top: 8em;
+  text-align: center;
+}
+.features__desc h2 {
+  font-size: 2.8rem;
+}
+.features__desc p {
+  font-size: 1.5rem;
+}
+.features__list {
+  margin: 5em 0;
+}
+.features__list-item {
+  margin-top: 4em;
+}
+.features__list-item .head {
+  display: flex;
+  align-items: center;
+}
+.features__list-item .head span {
+  background: var(--Bright-Red);
+  padding: 0.8em 2em;
+  color: var(--Vary-Light-Gray);
+  border-radius: 50px;
+  font-size: 1.3rem;
+}
+.features__list-item .head h3 {
+  background: var(--Very-Pale-Red);
+  padding: 0.7em 0;
+  width: 100%;
+  padding-left: 1em;
+  font-size: 1.5rem;
+}
+.features__list-item p {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  line-height: 2;
+}
+
+.testimonials {
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 2.8rem;
+}
+.testimonials__testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 6em 0;
+  background: rgba(238, 238, 238, 0.466);
+  padding: 4em;
+  padding-top: 8em;
+  margin-top: 11em;
+}
+.testimonials__testimonial img {
+  position: absolute;
+  width: 100px;
+  top: -50px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.testimonials__testimonial h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+.testimonials__testimonial p {
+  font-size: 1.4rem;
+}
+.testimonials .dots {
+  display: flex;
+  justify-content: center;
+}
+.testimonials .dots .dot {
+  height: 10px;
+  width: 10px;
+  border: 1px solid var(--Bright-Red);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 0.7em;
+}
+.testimonials a {
+  display: inline-block;
+  margin-top: 2em;
+  background: var(--Bright-Red);
+  padding: 1.2em 2.2em;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  color: var(--Vary-Light-Gray);
+}
+
+.active {
+  background: var(--Bright-Red);
 }
 
 /*# sourceMappingURL=index.css.map */

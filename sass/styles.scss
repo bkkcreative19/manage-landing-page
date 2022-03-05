@@ -22,7 +22,7 @@ html {
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   position: relative;
-  //   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .pattern {
@@ -45,6 +45,16 @@ ul {
   list-style: none;
 }
 
+p {
+  color: var(--Dark-Grayish-Blue);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--Dark-Blue);
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -64,6 +74,7 @@ ul {
   }
 }
 
+// hero
 .hero {
   //   &__image {
 
@@ -74,12 +85,11 @@ ul {
 
     & h1 {
       font-size: 4rem;
-      color: var(--Dark-Blue);
     }
 
     & p {
       font-size: 1.5rem;
-      color: var(--Dark-Grayish-Blue);
+
       margin-top: 0.5em;
     }
 
@@ -93,4 +103,115 @@ ul {
       color: var(--Vary-Light-Gray);
     }
   }
+}
+
+// features
+.features {
+  &__desc {
+    margin-top: 8em;
+    text-align: center;
+    & h2 {
+      font-size: 2.8rem;
+    }
+
+    & p {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__list {
+    margin: 5em 0;
+    &-item {
+      margin-top: 4em;
+      & .head {
+        display: flex;
+        align-items: center;
+
+        & span {
+          background: var(--Bright-Red);
+          padding: 0.8em 2em;
+          color: var(--Vary-Light-Gray);
+          border-radius: 50px;
+          font-size: 1.3rem;
+        }
+
+        & h3 {
+          background: var(--Very-Pale-Red);
+          padding: 0.7em 0;
+          width: 100%;
+          padding-left: 1em;
+          font-size: 1.5rem;
+        }
+      }
+
+      & p {
+        margin-top: 1em;
+        font-size: 1.4rem;
+        line-height: 2;
+      }
+    }
+  }
+}
+
+// testimonials
+.testimonials {
+  text-align: center;
+  & h2 {
+    font-size: 2.8rem;
+  }
+
+  &__testimonial {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 6em 0;
+    background: rgba(238, 238, 238, 0.466);
+    padding: 4em;
+    padding-top: 8em;
+    margin-top: 11em;
+
+    & img {
+      position: absolute;
+      width: 100px;
+      top: -50px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    & h3 {
+      font-size: 1.7rem;
+      margin-bottom: 1em;
+    }
+
+    & p {
+      font-size: 1.4rem;
+    }
+  }
+
+  & .dots {
+    display: flex;
+    justify-content: center;
+    & .dot {
+      height: 10px;
+      width: 10px;
+      border: 1px solid var(--Bright-Red);
+      border-radius: 50%;
+      cursor: pointer;
+      margin-left: 0.7em;
+    }
+  }
+
+  & a {
+    display: inline-block;
+    margin-top: 2em;
+    background: var(--Bright-Red);
+    padding: 1.2em 2.2em;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    color: var(--Vary-Light-Gray);
+  }
+}
+
+.active {
+  background: var(--Bright-Red);
 }
