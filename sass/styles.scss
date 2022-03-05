@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --Bright-Red: hsl(12, 88%, 59%);
+  --Dark-Blue: hsl(228, 39%, 23%);
+  --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+  --Very-Dark-Blue: hsl(233, 12%, 13%);
+  --Very-Pale-Red: hsl(13, 100%, 96%);
+  --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
 html {
   font-size: 62.5%;
 }
@@ -13,6 +22,7 @@ html {
 body {
   font-family: "Be Vietnam Pro", sans-serif;
   position: relative;
+  //   overflow: hidden;
 }
 
 .pattern {
@@ -25,6 +35,14 @@ body {
 img {
   max-width: 100%;
   display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 .container {
@@ -47,7 +65,32 @@ img {
 }
 
 .hero {
-  &__image {
-    // background: url("../images/bg-tablet-pattern.svg");
+  //   &__image {
+
+  //   }
+
+  &__content {
+    text-align: center;
+
+    & h1 {
+      font-size: 4rem;
+      color: var(--Dark-Blue);
+    }
+
+    & p {
+      font-size: 1.5rem;
+      color: var(--Dark-Grayish-Blue);
+      margin-top: 0.5em;
+    }
+
+    & a {
+      display: inline-block;
+      margin-top: 2em;
+      background: var(--Bright-Red);
+      padding: 1.2em 2.2em;
+      font-size: 1.3rem;
+      border-radius: 50px;
+      color: var(--Vary-Light-Gray);
+    }
   }
 }
