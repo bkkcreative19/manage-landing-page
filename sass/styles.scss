@@ -1,3 +1,53 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  position: relative;
+}
+
+.pattern {
+  position: absolute;
+  top: -6rem;
+  right: -8rem;
+  z-index: -1;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// nav
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 4em 0;
+
+  &__list-mobile {
+    position: fixed;
+    display: none;
+  }
+}
+
+.hero {
+  &__image {
+    // background: url("../images/bg-tablet-pattern.svg");
+  }
 }
