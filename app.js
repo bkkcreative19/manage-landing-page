@@ -33,27 +33,34 @@ const testimonials = [
 ];
 
 dots.forEach((dot, index) => {
-  let testimonial;
   dot.addEventListener("click", () => {
-    if (index === 0) {
-      dot.classList.add("active");
-      testimonial = testimonials[0];
-      changeDOM(testimonial);
-    } else if (index === 1) {
-      dot.classList.add("active");
-      testimonial = testimonials[1];
-      changeDOM(testimonial);
-    } else if (index === 2) {
-      dot.classList.add("active");
-      testimonial = testimonials[2];
-      changeDOM(testimonial);
-    } else if (index === 3) {
-      dot.classList.add("active");
-      testimonial = testimonials[3];
-      changeDOM(testimonial);
-    }
+    yay(dot, index);
   });
 });
+
+function yay(dot, index) {
+  document
+    .querySelectorAll(".active")
+    .forEach((item) => item.classList.remove("active"));
+  let testimonial;
+  if (index === 0) {
+    dot.classList.add("active");
+    testimonial = testimonials[0];
+    changeDOM(testimonial);
+  } else if (index === 1) {
+    dot.classList.add("active");
+    testimonial = testimonials[1];
+    changeDOM(testimonial);
+  } else if (index === 2) {
+    dot.classList.add("active");
+    testimonial = testimonials[2];
+    changeDOM(testimonial);
+  } else if (index === 3) {
+    dot.classList.add("active");
+    testimonial = testimonials[3];
+    changeDOM(testimonial);
+  }
+}
 
 function changeDOM(testimonial) {
   const testimonialDOM = document.getElementById("testimonial");
